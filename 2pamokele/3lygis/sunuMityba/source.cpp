@@ -12,7 +12,7 @@ int amzius;
 
 void skaitytiDuomenis(int & mn, int & mx, int & n, suo S[]);
 double maitinimosiSantykis(int m, float s);
-double santykiuVidurkis(int n, double sum);
+double santykiuVidurkis(int n, suo S[]);
 
 int main() //unfinished. blogas ats
 {
@@ -22,25 +22,29 @@ int main() //unfinished. blogas ats
 
     skaitytiDuomenis(minTyrimoAmzius, maxTyrimoAmzius, n, tiriamiejiSunys);
 
-    double sum=0;
-    for(int i=0; i<n; i++){
-        sum+=maitinimosiSantykis(tiriamiejiSunys[i].maistas, tiriamiejiSunys[i].svoris);
-    }
-    cout << santykiuVidurkis(n, sum) << endl;
+    ofstream out("rez.txt");
+
+    out << santykiuVidurkis(n, tiriamiejiSunys) << endl;
+
+    out.close();
 
     return 0;
 }
 
-double santykiuVidurkis(int n, double sum)
+double santykiuVidurkis(int n, suo S[])
 {
-    double vid= float(sum/n);
+    double sum=0, vid;
+
+    for(int i=0; i<n; i++)
+        sum+=maitinimosiSantykis(S[i].maistas, S[i].svoris);
+
+    vid= double(sum/n);
     return vid;
 }
 
 double maitinimosiSantykis(int m, float s) // maisto kiekis ir suns svoris
 {
-    double santykis= m/sqrt(s);
-
+    double santykis= double(m/sqrt(s*1000));
     return santykis;
 }
 
@@ -53,6 +57,5 @@ void skaitytiDuomenis(int & mn, int & mx, int & n, suo S[])
     for(int i=0; i<n; i++){
         in >> S[i].svoris >> S[i].maistas >> S[i].amzius;
     }
-
     in.close();
 }
