@@ -10,6 +10,7 @@ int maistas;
 int amzius;
 };
 
+//diudis budis diudiudiu
 void skaitytiDuomenis(int & mn, int & mx, int & n, suo S[]);
 double maitinimosiSantykis(int m, float s);
 double santykiuVidurkis(int n, suo S[]);
