@@ -1,0 +1,6 @@
+2 3 antra
+5 14 antra
+6 17 antra
+2 9 antra
+7 8 antra
+4 4 pirma

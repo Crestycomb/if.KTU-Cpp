@@ -1,0 +1,7 @@
+5
+Jonaitis	3 2 3 2
+Petraitis	2 3 2
+Antanaitis	2 4 3
+Kizlaitis	3 2 1 2
+Pranaitis	2 2 2
+2 6 2

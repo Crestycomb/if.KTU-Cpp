@@ -22,7 +22,6 @@ int main()
 
     Skaityti(n, petriukoDiena);
 
-
     Spausdinti (n, petriukoDiena, 'D');
     Spausdinti (n, petriukoDiena, 'K');
     Spausdinti (n, petriukoDiena, 'T');
@@ -33,8 +32,6 @@ int main()
 void Spausdinti(int n, diena D[], char x)
 {
     ofstream out("veikla_rez.txt");
-
-
 
     if(x=='D')
         cout << "DRAUGAI: " << endl;

@@ -1,0 +1,18 @@
+17
+Petras	18
+Tomas	17	
+Jonas	19
+Darius	20
+Rimas	17
+Dalia	18
+Rimat	17
+Rimar	17
+Rimas	18
+Aleksandras	20
+Aleksandras 21
+Aleksandras 22
+Birute	15
+Birute	16
+Cecilija	19
+Rimasa	18
+Rimasb	18
